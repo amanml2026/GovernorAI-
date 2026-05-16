@@ -39,8 +39,7 @@ to
 
 ## 🏗️ Concept Architecture
 
-```
-mermaid
+```mermaid
 flowchart TD
 
 A[Dataset (Raw Data)] --> B[Pattern Extraction]
@@ -60,7 +59,7 @@ E --> F[Predictions / Output]
 F --> G[Performance Feedback]
 
 G --> C
-```
+
 
 ## 🔁 Feedback Loop
 
