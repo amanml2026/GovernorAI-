@@ -71,6 +71,8 @@ Instead of trusting AI outputs directly:
 
 ---
 
+![GovernorAI Architecture](assets/architecture.png)
+
 ## 🔧 Core Modules
 
 ### 👁 Monitoring Engine
