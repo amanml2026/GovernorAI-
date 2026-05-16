@@ -39,7 +39,8 @@ to
 
 ## 🏗️ Concept Architecture
 
-```mermaid
+```
+mermaid
 flowchart TD
 
 A[Dataset (Raw Data)] --> B[Pattern Extraction]
