@@ -30,27 +30,24 @@ The Governor AI acts as a **meta-learning system** that sits above the main lear
 ---
 
 ## 🏗️ Concept Architecture
-Dataset (Raw Data)
-│
-▼
-Pattern Extraction
-│
-▼
-🧠 Governor AI (Relevance Evaluator)
-│ ├── Identifies meaningful patterns
-│ ├── Detects noise / spurious correlations
-│ └── Assigns importance scores
-│
-▼
-Filtered / Weighted Patterns
-│
-▼
-📊 Main Learning Model
-│
-▼
-Predictions / Output
+```mermaid
+flowchart TD
 
+A[Dataset (Raw Data)] --> B[Pattern Extraction]
 
+B --> C[🧠 Governor AI<br/>Relevance Evaluator]
+
+C --> C1[Identifies meaningful patterns]
+C --> C2[Detects noise / spurious correlations]
+C --> C3[Assigns importance scores]
+
+C --> D[Filtered / Weighted Patterns]
+
+D --> E[📊 Main Learning Model]
+
+E --> F[Predictions / Output]t
+
+```
 ---
 
 ## 🔁 Feedback Loop
