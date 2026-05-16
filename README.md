@@ -8,28 +8,37 @@
 
 ## 📌 Overview
 
-**Governor AI** is a conceptual idea for a supervisory intelligence layer that guides machine learning models by distinguishing between **relevant and irrelevant patterns** in data.
+**Governor AI** is a conceptual supervisory layer designed to improve machine learning systems by evaluating the **quality and relevance of learned patterns** before they influence model training.
 
-The motivation comes from a fundamental limitation in machine learning systems:
+The motivation comes from a core limitation in modern ML systems:
 
-> Models do not understand meaning — they only optimize statistical patterns.
+> Models optimize correlations — not meaning.
 
-This can lead to **overfitting**, where models learn noise and spurious correlations instead of meaningful structure.
+As a result, they often learn **spurious patterns**, leading to overfitting and poor generalization.
+
+Governor AI is proposed as a **meta-level filtering system** that sits between raw data and the learning model.
 
 ---
 
 ## 💡 Core Idea
 
-The Governor AI acts as a **meta-learning system** that sits above the main learning model and:
+Governor AI acts as a **pattern governance layer** that:
 
-- Evaluates potential patterns in data
-- Assigns relevance scores to each pattern
-- Filters or weights patterns before training
-- Reduces learning from spurious correlations
+- Extracts candidate patterns from raw data
+- Evaluates their relevance and stability
+- Assigns importance scores
+- Filters or re-weights patterns before training
+
+This shifts ML from:
+
+> “learn everything from data”  
+to  
+> “learn only what is meaningful”
 
 ---
 
 ## 🏗️ Concept Architecture
+
 ```mermaid
 flowchart TD
 
@@ -45,10 +54,12 @@ C --> D[Filtered / Weighted Patterns]
 
 D --> E[📊 Main Learning Model]
 
-E --> F[Predictions / Output]t
+E --> F[Predictions / Output]
 
+F --> G[Performance Feedback]
+
+G --> C
 ```
----
 
 ## 🔁 Feedback Loop
 
